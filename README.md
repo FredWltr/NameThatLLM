@@ -28,16 +28,22 @@ Citation: Yao Yan, Martyna Plomecka, and Ashley Oldacre. Name That LLM. Kaggle, 
 2. How do paragraph length and punctuation use differ between LLMs?
 3. Are longer paragraphs easier to classify correctly than shorter paragraphs?
 
-## What we have done
-
-- [x] Added three research questions.
-- [x] Looked at the dataset, its columns, and example paragraphs.
-- [x] Checked for missing values and duplicate paragraphs. Neither showed up in the current results.
-- [x] Checked how many paragraphs belong to each model.
-- [x] Calculated features such as word count, average word length, sentence length, and punctuation use.
-- [x] Added a boxplot comparing paragraph lengths across models.
-- [x] Added a heatmap showing correlations between numerical features.
-- [x] Flagged possible outliers and displayed examples to review.
+- [x] Uploaded Jeffery's initial notebook and added the dataset CSV to the repository. Fred Walter
+- [x] Added the initial Kaggle login, download, and data-loading code. Jeffery Hatch
+- [x] Added the first research question about identifying LLMs from unfamiliar prompts. Jeffery Hatch
+- [x] Added code to inspect the dataset size, columns, and example paragraphs. Jeffery Hatch
+- [x] Added checks for missing values, duplicate paragraphs, prompt counts, and paragraph counts per model. Jeffery Hatch
+- [x] Calculated word counts, summarized paragraph lengths by model, and added the paragraph-length boxplot. Jeffery Hatch
+- [x] Changed the notebook to load the team's CSV from GitHub instead of downloading through Kaggle. Fred Walter
+- [x] Added NLTK sentence tokenization and the required language-resource downloads. Fred Walter
+- [x] Expanded the dataset with word count, average word length, average sentence length, sentence count, punctuation count, and symbol count. Fred Walter
+- [x] Added detection of punctuation types and calculated individual punctuation ratios. Fred Walter
+- [x] Added the second and third research questions about writing differences and classification accuracy by paragraph length. Jeffery Hatch
+- [x] Added comments explaining the code, feature calculations, and their limitations. Jeffery Hatch
+- [x] Updated punctuation ratios to prevent division by zero and use escaped punctuation matching. Jeffery Hatch
+- [x] Added punctuation per 100 words, a numerical feature summary, and the correlation heatmap. Jeffery Hatch
+- [x] Added IQR outlier checks for average sentence length and punctuation per 100 words, with examples to review. Jeffery Hatch
+- [x] Updated the team names and added the README, source links, remaining-work checklist, and proposed evaluation plan. Jeffery Hatch
 
 ## What we need to finish this week
 
