@@ -54,8 +54,8 @@ Citation: Yao Yan, Martyna Plomecka, and Ashley Oldacre. Name That LLM. Kaggle, 
 - [ ] Compare punctuation use across models to help answer our second question. - Zak
 - [ ] Review the flagged outliers and explain whether we will keep them, fix them, or remove them. - Isaac
 - [ ] Decide which features to use and document any cleaning changes, including how to handle empty text and punctuation our current code does not count. -Isaac
-- [ ] Explain how we will handle categorical variables. The model name is our target label. The paragraph ID should not be used to predict it, and the prompt ID should be used to group responses when splitting the data.
-- [ ] Put the preparation steps into a reusable function or pipeline that takes the raw data and returns the features and labels needed for modeling. Keep the feature columns consistent and fit any learned preprocessing using training data only.
+- [ ] Explain how we will handle categorical variables. The model name is our target label. The paragraph ID should not be used to predict it, and the prompt ID should be used to group responses when splitting the data. -Zak
+- [ ] Put the preparation steps into a reusable function or pipeline that takes the raw data and returns the features and labels needed for modeling. Keep the feature columns consistent and fit any learned preprocessing using training data only. -Zak
 - [ ] Choose our main question and explain how we will measure success.
 - [ ] Restart the notebook and run all cells in order to make sure everything works.
 - [ ] Review the final notebook together and have everyone submit the same version on Canvas.
