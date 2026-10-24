@@ -45,13 +45,13 @@ Citation: Yao Yan, Martyna Plomecka, and Ashley Oldacre. Name That LLM. Kaggle, 
 - [x] Added punctuation per 100 words, a numerical feature summary, and the correlation heatmap. Jeffery Hatch
 - [x] Added IQR outlier checks for average sentence length and punctuation per 100 words, with examples to review. Jeffery Hatch
 - [x] Updated the team names and added the README, source links, remaining-work checklist, and proposed evaluation plan. Jeffery Hatch
+- [x] Compare punctuation use across models to help answer our second question. - Zak Saylors
 
 ## What we need to finish this week
 
 - [ ] Clean up the introduction and confirm everyone's name is listed correctly. - Isaac
 - [ ] Add the Kaggle source and collection details to the notebook, and explain how the data fits the assignment. - Isaac
 - [ ] Fill in the Observations section with what we learned from the graphs and summary statistics. - Isaac
-- [ ] Compare punctuation use across models to help answer our second question. - Zak
 - [ ] Review the flagged outliers and explain whether we will keep them, fix them, or remove them. - Isaac
 - [ ] Decide which features to use and document any cleaning changes, including how to handle empty text and punctuation our current code does not count. -Isaac
 - [ ] Explain how we will handle categorical variables. The model name is our target label. The paragraph ID should not be used to predict it, and the prompt ID should be used to group responses when splitting the data. -Zak
