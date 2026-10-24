@@ -2,7 +2,7 @@
 
 CS-6600 Project Part 1: Exploratory Data Analysis
 
-Team: Jeffery Hatch, Fred Walter, Issac Christensen, Zachary Saylors
+Team: Jeffery Hatch, Fred Walter, Isaac Christensen, Zachary Saylors
 
 ## About the project
 
@@ -48,11 +48,11 @@ Citation: Yao Yan, Martyna Plomecka, and Ashley Oldacre. Name That LLM. Kaggle, 
 
 ## What we need to finish this week
 
-- [ ] Clean up the introduction and confirm everyone's name is listed correctly.
-- [ ] Add the Kaggle source and collection details to the notebook, and explain how the data fits the assignment.
-- [ ] Fill in the Observations section with what we learned from the graphs and summary statistics.
-- [ ] Compare punctuation use across models to help answer our second question.
-- [ ] Review the flagged outliers and explain whether we will keep them, fix them, or remove them.
+- [ ] Clean up the introduction and confirm everyone's name is listed correctly. - Isaac
+- [ ] Add the Kaggle source and collection details to the notebook, and explain how the data fits the assignment. - Isaac
+- [ ] Fill in the Observations section with what we learned from the graphs and summary statistics. - Isaac
+- [ ] Compare punctuation use across models to help answer our second question. - Isaac
+- [ ] Review the flagged outliers and explain whether we will keep them, fix them, or remove them. - Isaac
 - [ ] Decide which features to use and document any cleaning changes, including how to handle empty text and punctuation our current code does not count.
 - [ ] Explain how we will handle categorical variables. The model name is our target label. The paragraph ID should not be used to predict it, and the prompt ID should be used to group responses when splitting the data.
 - [ ] Put the preparation steps into a reusable function or pipeline that takes the raw data and returns the features and labels needed for modeling. Keep the feature columns consistent and fit any learned preprocessing using training data only.
