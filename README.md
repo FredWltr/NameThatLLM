@@ -45,7 +45,7 @@ Citation: Yao Yan, Martyna Plomecka, and Ashley Oldacre. Name That LLM. Kaggle, 
 - [x] Added punctuation per 100 words, a numerical feature summary, and the correlation heatmap. Jeffery Hatch
 - [x] Added IQR outlier checks for average sentence length and punctuation per 100 words, with examples to review. Jeffery Hatch
 - [x] Updated the team names and added the README, source links, remaining-work checklist, and proposed evaluation plan. Jeffery Hatch
-- [*] Compare punctuation use across models to help answer our second question. - Zak Saylors
+- [x] Compare punctuation use across models to help answer our second question. - Zak Saylors
 
 ## What we need to finish this week
 
