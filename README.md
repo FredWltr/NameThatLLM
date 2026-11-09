@@ -56,12 +56,26 @@ Citation: Yao Yan, Martyna Plomecka, and Ashley Oldacre. Name That LLM. Kaggle, 
 - [x] Choose our main question and explain how we will measure success. - Jeffery
 - [x] Restart the notebook and run all cells in order to make sure everything works. - Jeffery
 
-## What we need to finish this week
-
-- [ ] Review the final notebook together and have everyone submit the same version on Canvas.
-
 ## Plan for evaluating the model
 
 We could focus on identifying LLMs from unfamiliar prompts. We would keep responses to the same prompt together when splitting the data so that a prompt cannot appear in both training and testing.
 
 We could also use accuracy and macro F1 to evaluate the results and compare them against a simple model that always guesses the most common training label. A confusion matrix would show which LLMs get confused with each other.
+
+## Part 2: Model and presentation
+
+Open the [Part 2 notebook](NameThatLLM_Part2_Baseline.ipynb) with the same Python kernel as Part 1 and run all cells. If you're setting up a fresh environment, install the packages with `python -m pip install -r requirements-part2-baseline.txt`.
+
+Use the [shared split CSV](dataset/part2_split.csv) for each model. Join it to the data by `id` and use `validation_fold` on the training rows. Compare models using balanced accuracy and macro F1.
+
+### What we have done
+
+- [x] Set up the shared prompt split and three validation folds. - Jeffery Hatch
+- [x] Added the Part 2 notebook and ran the dummy and logistic regression baselines on the same folds. - Jeffery Hatch
+
+### What we need to finish
+
+- [ ] Compare any other models on the shared folds and choose the final model using validation scores.
+- [ ] Fit the chosen model on all training rows. Finish the notebook with the data, preprocessing, test results, and limitations.
+- [ ] Prepare a 15 to 20 minute presentation with a section for each team member.
+- [ ] Upload the final notebook and slides to the team Drive folder before midnight on December 4 and include the recording.
