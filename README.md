@@ -76,6 +76,13 @@ Use the [shared split CSV](dataset/part2_split.csv) for each model. Join it to t
 - [x] Added balanced accuracy and macro F1 to both MLP evaluations. - Jeffery Hatch
 - [x] Added random seeds, kept each model's fold results separately, and combined the results into one comparison table. - Jeffery Hatch
 - [x] Corrected the explanation of how the company-guided model learns. - Jeffery Hatch
+- [x] Added 54 features covering punctuation, sentence variation, vocabulary diversity, capitalization, symbols, and common function words. - Jeffery Hatch
+- [x] Compared six feature sets using logistic regression on the shared validation folds and added a graph of the results. - Jeffery Hatch
+
+### Feature comparison results
+
+Logistic regression with the expanded 63 features averaged 31.0% balanced accuracy and 30.2% macro F1, compared with 25.9% and 23.8% using the original nine features.
+Balanced accuracy improved in all three validation folds. These are validation results, haven't evaluated on final test set.
 
 ### Current validation results
 
