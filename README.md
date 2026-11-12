@@ -64,7 +64,7 @@ We could also use accuracy and macro F1 to evaluate the results and compare them
 
 ## Part 2: Model and presentation
 
-Open the [Part 2 notebook](NameThatLLM_Part2_Baseline.ipynb) with the same Python kernel as Part 1 and run all cells. If you're setting up a fresh environment, install the packages with `python -m pip install -r requirements-part2-baseline.txt keras torch`.
+Open the [Part 2 notebook](NameThatLLM_Part2_Baseline.ipynb) with the same Python kernel as Part 1 and run all cells. If you're setting up a fresh environment, install the packages with `python -m pip install -r requirements-part2-baseline.txt`.
 
 Use the [shared split CSV](dataset/part2_split.csv) for each model. Join it to the data by `id` and use `validation_fold` on the training rows. Compare models using balanced accuracy and macro F1.
 
