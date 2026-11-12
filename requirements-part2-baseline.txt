@@ -6,3 +6,5 @@ nltk==3.9.2
 matplotlib==3.10.8
 seaborn==0.13.2
 ipykernel>=6.29,<8
+keras==3.15.1
+torch==2.15.0

@@ -64,7 +64,7 @@ We could also use accuracy and macro F1 to evaluate the results and compare them
 
 ## Part 2: Model and presentation
 
-Open the [Part 2 notebook](NameThatLLM_Part2_Baseline.ipynb) with the same Python kernel as Part 1 and run all cells. If you're setting up a fresh environment, install the packages with `python -m pip install -r requirements-part2-baseline.txt`.
+Open the [Part 2 notebook](NameThatLLM_Part2_Baseline.ipynb) with the same Python kernel as Part 1 and run all cells. If you're setting up a fresh environment, install the packages with `python -m pip install -r requirements-part2-baseline.txt keras torch`.
 
 Use the [shared split CSV](dataset/part2_split.csv) for each model. Join it to the data by `id` and use `validation_fold` on the training rows. Compare models using balanced accuracy and macro F1.
 
@@ -72,10 +72,27 @@ Use the [shared split CSV](dataset/part2_split.csv) for each model. Join it to t
 
 - [x] Set up the shared prompt split and three validation folds. - Jeffery Hatch
 - [x] Added the Part 2 notebook and ran the dummy and logistic regression baselines on the same folds. - Jeffery Hatch
+- [x] Added regular and company-guided MLP models. - Fred Walter
+- [x] Added balanced accuracy and macro F1 to both MLP evaluations. - Jeffery Hatch
+- [x] Added random seeds, kept each model's fold results separately, and combined the results into one comparison table. - Jeffery Hatch
+- [x] Corrected the explanation of how the company-guided model learns. - Jeffery Hatch
+
+### Current validation results
+
+These are mean scores across the three validation folds. The final test set has not been evaluated.
+
+| Model | Balanced accuracy | Macro F1 |
+| --- | ---: | ---: |
+| Most frequent guess | 5.6% | 0.6% |
+| Logistic regression | 25.9% | 23.8% |
+| Regular MLP | 24.9% | 22.6% |
+| Company-guided MLP | 23.9% | 21.1% |
 
 ### What we need to finish
 
-- [ ] Compare any other models on the shared folds and choose the final model using validation scores.
+- [ ] Compare additional writing-style features and text-based features against the original nine-feature baseline.
+- [ ] Compare remaining models on the shared folds and choose the final approach using validation scores.
+- [ ] Analyze classification errors and whether longer paragraphs are easier to classify.
 - [ ] Fit the chosen model on all training rows. Finish the notebook with the data, preprocessing, test results, and limitations.
 - [ ] Prepare a 15 to 20 minute presentation with a section for each team member.
-- [ ] Upload the final notebook and slides to the team Drive folder before midnight on December 4 and include the recording.
+- [ ] Upload the final notebook, slides, and recording to the team Drive folder before midnight on December 4.
