@@ -78,28 +78,33 @@ Use the [shared split CSV](dataset/part2_split.csv) for each model. Join it to t
 - [x] Corrected the explanation of how the company-guided model learns. - Jeffery Hatch
 - [x] Added 54 features covering punctuation, sentence variation, vocabulary diversity, capitalization, symbols, and common function words. - Jeffery Hatch
 - [x] Compared six feature sets using logistic regression on the shared validation folds and added a graph of the results. - Jeffery Hatch
-
-### Feature comparison results
-
-Logistic regression with the expanded 63 features averaged 31.0% balanced accuracy and 30.2% macro F1, compared with 25.9% and 23.8% using the original nine features.
-Balanced accuracy improved in all three validation folds. These are validation results, haven't evaluated on final test set.
+- [x] Tested Fred's regular and company-guided MLPs with 63 features using the shared folds and the same training settings. - Jeffery Hatch
+- [x] Added a table and graph comparing all three classifiers with nine and 63 features. - Jeffery Hatch
 
 ### Current validation results
 
-These are mean scores across the three validation folds. The final test set has not been evaluated.
+These are mean scores across the three validation folds.
 
-| Model | Balanced accuracy | Macro F1 |
-| --- | ---: | ---: |
-| Most frequent guess | 5.6% | 0.6% |
-| Logistic regression | 25.9% | 23.8% |
-| Regular MLP | 24.9% | 22.6% |
-| Company-guided MLP | 23.9% | 21.1% |
+| Model | Features | Balanced accuracy | Macro F1 |
+|---|---:|---:|---:|
+| Most frequent guess | N/A | 5.6% | 0.6% |
+| Logistic regression | 9 | 25.9% | 23.8% |
+| Logistic regression | 63 | 31.0% | 30.2% |
+| Regular MLP | 9 | 24.9% | 22.6% |
+| Regular MLP | 63 | 26.2% | 25.4% |
+| Company-guided MLP | 9 | 23.9% | 21.1% |
+| Company-guided MLP | 63 | 26.6% | 25.5% |
+
+The expanded features improved average validation scores for all three classifiers. Logistic regression performed best. Its balanced accuracy improved in all three folds.
+
+The MLP validation folds also guide early stopping, so these are development scores.
 
 ### What we need to finish
 
-- [ ] Compare additional writing-style features and text-based features against the original nine-feature baseline.
+- [ ] Compare text features, such as word and character TF-IDF, against the nine- and 63-feature models.
 - [ ] Compare remaining models on the shared folds and choose the final approach using validation scores.
 - [ ] Analyze classification errors and whether longer paragraphs are easier to classify.
-- [ ] Fit the chosen model on all training rows. Finish the notebook with the data, preprocessing, test results, and limitations.
-- [ ] Prepare a 15 to 20 minute presentation with a section for each team member.
-- [ ] Upload the final notebook, slides, and recording to the team Drive folder before midnight on December 4.
+- [ ] Fit the chosen model on all training rows and evaluate it on the final test split.
+- [ ] Finish the notebook's explanations, findings, and limitations.
+- [ ] Prepare a 15 to 20 minute presentation with participation from every team member.
+- [ ] Upload the final notebook, slides, and recording (if online) to the team Drive folder before midnight on December 4.
