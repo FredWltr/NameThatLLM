@@ -80,6 +80,11 @@ Use the [shared split CSV](dataset/part2_split.csv) for each model. Join it to t
 - [x] Compared six feature sets using logistic regression on the shared validation folds and added a graph of the results. - Jeffery Hatch
 - [x] Tested Fred's regular and company-guided MLPs with 63 features using the shared folds and the same training settings. - Jeffery Hatch
 - [x] Added a table and graph comparing all three classifiers with nine and 63 features. - Jeffery Hatch
+- [x] Tested Random Forest with the 63 features and tried different settings to improve accuracy. - Zak Saylors
+- [x] Tested TF-IDF with unigrams and bigrams to see if word choice helps identify LLMs. - Zak Saylors
+- [x] Removed different groups of features to see which ones mattered most. Punctuation had the biggest impact. - Zak Saylors
+- [x] Combined writing-style features with TF-IDF, improving balanced accuracy from 30.94% to 31.35%. - Zak Saylors
+
 
 ### Current validation results
 
