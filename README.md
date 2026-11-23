@@ -106,9 +106,10 @@ The MLP validation folds also guide early stopping, so these are development sco
 
 ### What we need to finish
 
-- [ ] Compare text features, such as word and character TF-IDF, against the nine- and 63-feature models.
+- [x] Compare text features, such as word and character TF-IDF, against the nine- and 63-feature models.
+- [x] Test SVM with the 63 features. - Zak
 - [ ] Compare remaining models on the shared folds and choose the final approach using validation scores.
-- [ ] Analyze classification errors and whether longer paragraphs are easier to classify.
+- [x] Analyze classification errors and whether longer paragraphs are easier to classify. - Zak
 - [ ] Fit the chosen model on all training rows and evaluate it on the final test split.
 - [ ] Finish the notebook's explanations, findings, and limitations.
 - [ ] Prepare a 15 to 20 minute presentation with participation from every team member.
